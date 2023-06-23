@@ -7,11 +7,11 @@ return this.journeys.map(journey => journey.startLocation);
 };
 
 Traveller.prototype.getJourneyEndLocations = function () {
-  return this.journeys.map(journey => journey.endLocation);
+return this.journeys.map(journey => journey.endLocation);
 };
 
 Traveller.prototype.getJourneysByTransport = function (transport) {
-
+return this.journeys.filter(journey => journey.transport);
 };
 
 Traveller.prototype.getJourneysByMinDistance = function (minDistance) {
