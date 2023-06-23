@@ -19,6 +19,11 @@ return this.journeys.filter(journey => journey.distance >= minDistance);
 };
 
 Traveller.prototype.calculateTotalDistanceTravelled = function () {
+let totalDistanceTravelled = 0;
+for (const journey of this.journeys) {
+  totalDistanceTravelled += journey.distance;
+}
+return totalDistanceTravelled
 
 };
 
