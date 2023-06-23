@@ -27,7 +27,8 @@ return totalDistanceTravelled
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
-
+const uniqueModesOfTransport = new Set(this.journeys.map(journey => journey.transport))
+return uniqueModesOfTransport
 };
 
 module.exports = Traveller;
