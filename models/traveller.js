@@ -24,12 +24,10 @@ for (const journey of this.journeys) {
   totalDistanceTravelled += journey.distance;
 }
 return totalDistanceTravelled
-
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
 
 };
-
 
 module.exports = Traveller;
